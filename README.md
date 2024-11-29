@@ -23,7 +23,7 @@ A lightweight daily rewards system for QBCore servers. Players can claim daily r
 1. Clone the repository:
 \```bash
 cd resources/[qb]
-git clone https://github.com/yourusername/qb-dailyrewards.git
+git clone https://github.com/IllInuz/QB-Daily.git
 \```
 
 2. Configure your inventory system in `config.lua`:
@@ -42,9 +42,9 @@ Config.Rewards = {
 \```
 
 4. Add to your `server.cfg`:
-\```
-ensure qb-dailyrewards
-\```
+```
+ensure QB-Daily
+```
 
 ## Usage
 
