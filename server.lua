@@ -52,9 +52,9 @@ QBCore.Commands.Add('dailyreward', 'Claim your daily reward', {}, false, functio
     
     MySQL.Async.insert('INSERT INTO daily_rewards (citizenid, timestamp) VALUES (?, NOW())', {citizenid})
     if reward.type == "item" then
-        TriggerClientEvent('CnrCore:Notify', source, 'You received ~g~'..reward.name.. ' (X'..reward.amount..')~w~ as your daily reward!', 'success')
+        TriggerClientEvent('QBCore:Notify', source, 'You received ~g~'..reward.name.. ' (X'..reward.amount..')~w~ as your daily reward!', 'success')
     elseif reward.type == "money" then
-        TriggerClientEvent('CnrCore:Notify', source, 'You received ~g~$'..reward.amount..'~w~ as your daily reward!', 'success')
+        TriggerClientEvent('QBCore:Notify', source, 'You received ~g~$'..reward.amount..'~w~ as your daily reward!', 'success')
     end
 end)
 
